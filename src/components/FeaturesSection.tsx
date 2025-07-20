@@ -3,32 +3,32 @@ import { Card, CardContent } from "@/components/ui/card";
 export const FeaturesSection = () => {
   const features = [
     {
-      title: "+70 Personajes Bíblicos",
-      description: "Ilustrados en estilo tierno Bobbie Goods",
+      title: "+70 Personagens Bíblicos",
+      description: "Ilustrados no estilo fofo Bobbie Goods",
       icon: "📚",
       color: "bg-pink-vibrant/10 border-pink-vibrant/20"
     },
     {
-      title: "Acceso Inmediato",
-      description: "Material digital disponible al instante",
+      title: "Acesso Imediato",
+      description: "Material digital disponível na hora",
       icon: "⚡",
       color: "bg-blue-bright/10 border-blue-bright/20"
     },
     {
-      title: "Se Puede Imprimir",
-      description: "Úsalo en celular, tablet o impreso",
+      title: "Pode Imprimir",
+      description: "Use no celular, tablet ou impresso",
       icon: "🖨️",
       color: "bg-green-fresh/10 border-green-fresh/20"
     },
     {
-      title: "Aprendizaje Lúdico",
-      description: "Visual, ligero y coleccionable",
+      title: "Aprendizado Lúdico",
+      description: "Visual, leve e colecionável",
       icon: "🎨",
       color: "bg-purple-deep/10 border-purple-deep/20"
     },
     {
-      title: "Para Todas las Edades",
-      description: "Niños, jóvenes, adultos y líderes",
+      title: "Para Todas as Idades",
+      description: "Crianças, jovens, adultos e líderes",
       icon: "👨‍👩‍👧‍👦",
       color: "bg-orange-warm/10 border-orange-warm/20"
     }
@@ -39,7 +39,7 @@ export const FeaturesSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            ¿Por qué elegir nuestros Personajes Bíblicos? 💖
+            Por que escolher nossos Personagens Bíblicos? 💖
           </h2>
         </div>
         
@@ -58,16 +58,15 @@ export const FeaturesSection = () => {
         {/* Bible Quote */}
         <div className="bg-gradient-accent rounded-3xl p-8 md:p-12 text-center text-white shadow-glow">
           <blockquote className="text-lg md:text-xl italic mb-4">
-            "Pero Jesús dijo: 'Dejen que los niños vengan a mí y no se lo impidan; 
-            pues el Reino de los cielos pertenece a los que son como ellos'."
+            "Mas Jesus disse: 'Deixem que as crianças venham a mim e não as impeçam; pois o Reino dos céus pertence aos que são como elas'."
           </blockquote>
-          <p className="text-white/90 font-medium">- Mateo 19:14</p>
+          <p className="text-white/90 font-medium">- Mateus 19:14</p>
         </div>
         
         <div className="text-center mt-12">
           <p className="text-lg text-foreground/80 max-w-4xl mx-auto leading-relaxed">
-            Por eso, ¡la mejor forma de superar estas barreras es llegando a sus corazones! 
-            Y para ayudarte hemos creado un material que cambiará la forma en que tu hijo(a) ve la Biblia.
+            Por isso, a melhor forma de superar essas barreiras é chegando ao coração das crianças!
+            E para te ajudar, criamos um material que vai mudar a forma como seu filho(a) vê a Bíblia.
           </p>
         </div>
       </div>

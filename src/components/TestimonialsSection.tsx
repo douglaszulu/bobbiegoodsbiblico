@@ -5,42 +5,42 @@ export const TestimonialsSection = () => {
   const testimonials = [
     {
       name: "Carla Oliveira",
-      text: "¡Mis hijos adoraron colorear los personajes! Una forma hermosa de aprender sobre la Biblia.",
+      text: "Meus filhos adoraram colorir os personagens! Uma forma linda de aprender sobre a Bíblia.",
       avatar: "CO",
       rating: 5,
       productImage: "/lovable-uploads/9253593d-f68e-451b-bc72-7f5d28ac7deb.png"
     },
     {
       name: "Pastor Juan",
-      text: "¡Excelente recurso para usar en la iglesia! Los niños aman estos dibujos.",
+      text: "Excelente recurso para usar na igreja! As crianças amam esses desenhos.",
       avatar: "PJ",
       rating: 5,
       productImage: "/lovable-uploads/058758b6-b9d8-41e5-9539-2de2029e1c4f.png"
     },
     {
-      name: "María Santos",
-      text: "¡Mis hijos adoraron colorear! La calidad de los dibujos es excepcional.",
+      name: "Maria Santos",
+      text: "Meus filhos adoraram colorir! A qualidade dos desenhos é excepcional.",
       avatar: "MS",
       rating: 5,
       productImage: "/lovable-uploads/0f3d9fa6-14df-4284-a99d-b4d2c0798d00.png"
     },
     {
       name: "Ana Costa",
-      text: "¡Material increíble! Mi hija no para de colorear los personajes bíblicos.",
+      text: "Material incrível! Minha filha não para de colorir os personagens bíblicos.",
       avatar: "AC",
       rating: 5,
       productImage: "/lovable-uploads/67ec20f3-aa6f-48ee-ae18-15783156fe35.png"
     },
     {
       name: "Marcos Silva",
-      text: "¡Calidad excepcional de los dibujos! Perfecto para actividades educativas.",
+      text: "Qualidade excepcional dos desenhos! Perfeito para atividades educativas.",
       avatar: "MSi",
       rating: 5,
       productImage: "/lovable-uploads/91f6c47a-fe1a-4bae-affb-dd2fcafd177e.png"
     },
     {
-      name: "Familia Oliveira",
-      text: "¡Perfecto para actividades en familia! Material muy bien elaborado.",
+      name: "Família Oliveira",
+      text: "Perfeito para atividades em família! Material muito bem elaborado.",
       avatar: "FO",
       rating: 5,
       productImage: "/lovable-uploads/9b634237-b21a-40ff-97af-f1c75868554e.png"
@@ -52,10 +52,10 @@ export const TestimonialsSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Lo que dicen nuestros clientes 💕
+            O que dizem nossos clientes 💖
           </h2>
           <div className="flex items-center justify-center gap-2 text-green-fresh text-xl font-bold">
-            <span>+1.500 clientes satisfechos</span>
+            <span>+1.500 clientes satisfeitos</span>
             <div className="flex">
               {[...Array(5)].map((_, i) => (
                 <span key={i}>⭐</span>
@@ -72,7 +72,7 @@ export const TestimonialsSection = () => {
                 <div className="aspect-video w-full overflow-hidden">
                   <img 
                     src={testimonial.productImage} 
-                    alt={`Producto usado por ${testimonial.name}`}
+                    alt={`Produto usado por ${testimonial.name}`}
                     className="w-full h-full object-cover"
                   />
                 </div>

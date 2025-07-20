@@ -55,7 +55,7 @@ export const HeroBanner = () => {
         <Button variant="cta" className="w-full"
                     onClick={() => window.open('https://pay.kirvano.com/76c8b58d-4afd-4820-87fc-61787e254334', '_blank')}
                   >
-                    QUERO MEU PACK! (SOMENTE R$ 49,90)
+                    QUERO MEU PACK! (SOMENTE R$ 9,97)
                   </Button>
         
         {/* Hero Image */}
