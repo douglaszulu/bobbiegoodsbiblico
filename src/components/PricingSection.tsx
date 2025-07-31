@@ -94,7 +94,7 @@ export const PricingSection = () => {
           {/* Preço antigo */}
           <div className="text-center text-lg opacity-60 line-through mb-2">De R$ 29,97 por apenas</div>
           {/* Preço grande */}
-          <div className="text-center text-6xl md:text-7xl font-extrabold text-green-600 mb-4">R$ 9,97</div>
+          <div className="text-center text-6xl md:text-7xl font-extrabold text-green-600 mb-4">R$ 19,97</div>
           {/* Badge de desconto */}
           <div className="flex flex-col items-center mb-4">
             <div className="text-xl font-bold bg-yellow-400 text-black px-4 py-2 rounded-full inline-block mb-2 flex items-center gap-2">
@@ -121,7 +121,7 @@ export const PricingSection = () => {
       {/* Botão destacado */}
       <div className="max-w-2xl mx-auto mb-8">
         <a href="https://pay.kirvano.com/76c8b58d-4afd-4820-87fc-61787e254334" target="_blank" rel="noopener noreferrer" className="cta-button w-full block text-center font-bold text-xl py-4 rounded-full shadow-xl transition-all duration-300 hover:scale-105" style={{ background: '#FF6B00', color: '#fff', animation: 'pulse 2s infinite' }}>
-          COMPRAR AGORA! - R$ 9,97 (DOWNLOAD IMEDIATO)
+          COMPRAR AGORA! - R$ 19,97 (DOWNLOAD IMEDIATO)
         </a>
       </div>
 
