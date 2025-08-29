@@ -65,7 +65,7 @@ export const PricingSection = () => {
       {/* Banner fixo topo responsivo, paleta do site */}
       <div className="fixed z-50 top-4 left-1/2 transform -translate-x-1/2 w-[98vw] max-w-xl rounded-2xl shadow border border-white/20 flex flex-row items-center justify-between px-3 py-2 gap-2" style={{ minWidth: '280px', background: '#b13fc3' }}>
         <div className="flex flex-col justify-center items-start flex-1 min-w-0">
-          <span className="text-xs md:text-sm text-white font-semibold whitespace-nowrap">67% OFF SÓ HOJE:</span>
+          <span className="text-xs md:text-sm text-white font-semibold whitespace-nowrap">33% OFF SÓ HOJE:</span>
           <span className="text-lg md:text-2xl font-extrabold text-white tracking-widest leading-tight">{minutes}:{seconds}</span>
         </div>
         <a
@@ -97,7 +97,6 @@ export const PricingSection = () => {
         </p>
       </div>
 
-<<<<<<< HEAD
       {/* Planos de Preços */}
       <div className="max-w-6xl mx-auto mb-8 grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Plano Básico */}
@@ -108,22 +107,6 @@ export const PricingSection = () => {
             <div className="text-4xl font-extrabold text-blue-600 mb-4">R$ 9,97</div>
             <div className="text-lg font-bold bg-blue-100 text-blue-900 px-4 py-2 rounded-full inline-block mb-4">
               🎯 Ideal para começar
-=======
-      {/* Card Central */}
-      <div className="max-w-2xl mx-auto mb-8">
-        <div className="relative bg-white rounded-3xl shadow-glow border-4 border-yellow-300 p-8 md:p-12">
-          {/* Preço antigo */}
-          <div className="text-center text-lg opacity-60 line-through mb-2">De R$ 29,97 por apenas</div>
-          {/* Preço grande */}
-          <div className="text-center text-6xl md:text-7xl font-extrabold text-green-600 mb-4">R$ 19,97</div>
-          {/* Badge de desconto */}
-          <div className="flex flex-col items-center mb-4">
-            <div className="text-xl font-bold bg-yellow-400 text-black px-4 py-2 rounded-full inline-block mb-2 flex items-center gap-2">
-              💰 67% DE DESCONTO HOJE
-            </div>
-            <div className="text-lg opacity-90">
-              💝 Acesso Imediato + Todos os Bônus
->>>>>>> eb95e6946bf6de872cf09494b7d8b5c09e9ee24b
             </div>
           </div>
           
@@ -186,7 +169,6 @@ export const PricingSection = () => {
         </div>
       </div>
 
-<<<<<<< HEAD
       {/* Popup de Upgrade */}
       <Dialog open={showUpgradePopup} onOpenChange={setShowUpgradePopup}>
         <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
@@ -202,7 +184,7 @@ export const PricingSection = () => {
                 Que tal aproveitar o <span className="text-green-600">PLANO COMPLETO</span> com desconto?
               </h3>
               <p className="text-lg text-gray-600 mb-4">
-                Por apenas mais R$ 7,00 você leva o pacote completo com +70 personagens!
+                Por apenas mais R$ 10,00 você leva o pacote completo com +70 personagens!
               </p>
               
               <div className="bg-gradient-to-r from-orange-100 to-yellow-100 rounded-xl p-6 mb-6">
@@ -247,14 +229,6 @@ export const PricingSection = () => {
           </div>
         </DialogContent>
       </Dialog>
-=======
-      {/* Botão destacado */}
-      <div className="max-w-2xl mx-auto mb-8">
-        <a href="https://pay.kirvano.com/76c8b58d-4afd-4820-87fc-61787e254334" target="_blank" rel="noopener noreferrer" className="cta-button w-full block text-center font-bold text-xl py-4 rounded-full shadow-xl transition-all duration-300 hover:scale-105" style={{ background: '#FF6B00', color: '#fff', animation: 'pulse 2s infinite' }}>
-          COMPRAR AGORA! - R$ 19,97 (DOWNLOAD IMEDIATO)
-        </a>
-      </div>
->>>>>>> eb95e6946bf6de872cf09494b7d8b5c09e9ee24b
 
       {/* Barra de garantias */}
       <div className="max-w-2xl mx-auto flex flex-col md:flex-row items-center justify-center gap-4 mb-6">
