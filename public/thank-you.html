@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉 Obrigado pela sua compra! - Download dos seus materiais</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #27ae60 0%, #2ecc71 50%, #16a085 100%);
+            color: white;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        .confetti-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 10;
+        }
+        
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            animation: confetti-fall 3s linear infinite;
+        }
+        
+        @keyframes confetti-fall {
+            0% {
+                transform: translateY(-100vh) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(720deg);
+                opacity: 0;
+            }
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 20;
+        }
+        
+        .success-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .success-icon {
+            display: inline-block;
+            background: #27ae60;
+            color: white;
+            padding: 30px;
+            border-radius: 50%;
+            margin-bottom: 30px;
+            font-size: 4rem;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .main-title {
+            font-size: 2.5rem;
+            color: #a8e6cf;
+            margin-bottom: 20px;
+        }
+        
+        .subtitle {
+            font-size: 1.5rem;
+            color: #d5f4e6;
+        }
+        
+        .main-card {
+            background: white;
+            color: #333;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        
+        .confirmation-title {
+            text-align: center;
+            color: #27ae60;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .confirmation-text {
+            text-align: center;
+            font-size: 1.3rem;
+            color: #666;
+            margin-bottom: 40px;
+        }
+        
+        .steps-section {
+            background: #e8f5e8;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .steps-title {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+        
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .step {
+            text-align: center;
+        }
+        
+        .step-number {
+            background: #27ae60;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 20px auto;
+        }
+        
+        .step-title {
+            color: #2c3e50;
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .step-text {
+            color: #34495e;
+            font-size: 0.95rem;
+        }
+        
+        .important-info {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 10px;
+        }
+        
+        .important-title {
+            color: #856404;
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .info-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            color: #856404;
+        }
+        
+        .info-icon {
+            color: #ffc107;
+            font-size: 1.2rem;
+        }
+        
+        .support-section {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .support-title {
+            color: #495057;
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .support-text {
+            color: #6c757d;
+            margin-bottom: 20px;
+        }
+        
+        .support-contacts {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+        
+        .support-contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .contact-label {
+            color: #495057;
+            font-weight: bold;
+        }
+        
+        .contact-value {
+            color: #007bff;
+            text-decoration: none;
+        }
+        
+        .contact-value:hover {
+            text-decoration: underline;
+        }
+        
+        .testimonials-section {
+            margin: 40px 0;
+        }
+        
+        .testimonials-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #a8e6cf;
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .testimonial {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 25px;
+        }
+        
+        .stars {
+            color: #ffd700;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+        
+        .testimonial-text {
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+        
+        .testimonial-author {
+            color: #a8e6cf;
+            font-weight: bold;
+        }
+        
+        .final-thanks {
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .thanks-badge {
+            background: linear-gradient(45deg, #27ae60, #2ecc71);
+            color: white;
+            padding: 20px 40px;
+            border-radius: 50px;
+            display: inline-block;
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .blessing-text {
+            color: #a8e6cf;
+            font-size: 1.2rem;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .main-card {
+                padding: 20px;
+            }
+            
+            .steps-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .support-contacts {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Confetti Animation -->
+    <div class="confetti-container" id="confetti-container"></div>
+
+    <div class="container">
+        <!-- Header de Sucesso -->
+        <div class="success-header">
+            <div class="success-icon">✅</div>
+            <h1>🎉 PARABÉNS!</h1>
+            <h2 class="main-title">Sua compra foi realizada com sucesso!</h2>
+            <p class="subtitle">Obrigado por confiar em nosso trabalho!</p>
+        </div>
+
+        <!-- Card Principal -->
+        <div class="main-card">
+            <h3 class="confirmation-title">✅ Compra Confirmada!</h3>
+            <p class="confirmation-text">
+                Seu pedido foi processado e você receberá os materiais em breve.
+            </p>
+
+            <!-- Próximos Passos -->
+            <div class="steps-section">
+                <h4 class="steps-title">📋 Próximos Passos:</h4>
+                
+                <div class="steps-grid">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h5 class="step-title">📧 Verifique seu E-mail</h5>
+                        <p class="step-text">
+                            Você receberá um e-mail de confirmação com os links de download em até 5 minutos.
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h5 class="step-title">📱 Faça o Download</h5>
+                        <p class="step-text">
+                            Clique nos links enviados por e-mail para baixar seus materiais digitais.
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h5 class="step-title">🎯 Comece a Estudar</h5>
+                        <p class="step-text">
+                            Organize seus materiais e comece sua jornada de estudos bíblicos!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Informações Importantes -->
+            <div class="important-info">
+                <h4 class="important-title">⚠️ Informações Importantes:</h4>
+                <ul class="info-list">
+                    <li class="info-item">
+                        <span class="info-icon">📌</span>
+                        <span>Verifique sua caixa de spam caso não receba o e-mail em 5 minutos</span>
+                    </li>
+                    <li class="info-item">
+                        <span class="info-icon">📌</span>
+                        <span>Salve os arquivos em seu dispositivo para acesso offline</span>
+                    </li>
+                    <li class="info-item">
+                        <span class="info-icon">📌</span>
+                        <span>Você tem acesso vitalício aos materiais adquiridos</span>
+                    </li>
+                    <li class="info-item">
+                        <span class="info-icon">📌</span>
+                        <span>Garantia de 7 dias - caso não fique satisfeito, devolvemos seu dinheiro</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Contato de Suporte -->
+            <div class="support-section">
+                <h4 class="support-title">🆘 Precisa de Ajuda?</h4>
+                <p class="support-text">
+                    Nossa equipe de suporte está sempre disponível para ajudá-lo!
+                </p>
+                <div class="support-contacts">
+                    <div class="support-contact">
+                        <div class="contact-label">📧 E-mail:</div>
+                        <a href="mailto:suporte@bobbiegoods.com" class="contact-value">suporte@bobbiegoods.com</a>
+                    </div>
+                    <div class="support-contact">
+                        <div class="contact-label">💬 WhatsApp:</div>
+                        <a href="https://wa.me/5511999999999" class="contact-value" target="_blank">(11) 99999-9999</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testemunhos de Satisfação -->
+        <div class="testimonials-section">
+            <h3 class="testimonials-title">💬 O que nossos clientes dizem:</h3>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Material excelente! Meus filhos adoraram os personagens e eu aprendi muito com os estudos."
+                    </p>
+                    <p class="testimonial-author">- Maria Santos</p>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Compra valeu cada centavo! Conteúdo de qualidade e entrega super rápida."
+                    </p>
+                    <p class="testimonial-author">- João Silva</p>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Recomendo para todas as famílias! Transformou nosso tempo de estudo bíblico."
+                    </p>
+                    <p class="testimonial-author">- Ana Costa</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Agradecimento Final -->
+        <div class="final-thanks">
+            <div class="thanks-badge">
+                🙏 Muito obrigado pela sua confiança!
+            </div>
+            <p class="blessing-text">
+                Que Deus abençoe seus estudos e sua família! 🙌
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Confetti Animation
+        function createConfetti() {
+            const container = document.getElementById('confetti-container');
+            const colors = ['#FFD700', '#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4', '#FECA57', '#FF9FF3', '#54A0FF'];
+            
+            for (let i = 0; i < 50; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti';
+                confetti.style.left = Math.random() * 100 + '%';
+                confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.animationDelay = Math.random() * 3 + 's';
+                confetti.style.animationDuration = (Math.random() * 3 + 2) + 's';
+                container.appendChild(confetti);
+            }
+        }
+        
+        // Create confetti on page load
+        createConfetti();
+        
+        // Remove confetti after 5 seconds
+        setTimeout(() => {
+            const container = document.getElementById('confetti-container');
+            container.style.display = 'none';
+        }, 5000);
+    </script>
+</body>
+</html>

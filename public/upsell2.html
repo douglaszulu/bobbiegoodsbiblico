@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉 ÚLTIMA OFERTA - Manual de Interpretação Bíblica por R$ 16,90</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #8e44ad 0%, #9b59b6 50%, #e91e63 100%);
+            color: white;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .timer {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .timer-box {
+            display: inline-block;
+            background: linear-gradient(45deg, #e74c3c, #e91e63);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .subtitle {
+            text-align: center;
+            font-size: 1.5rem;
+            color: #ffd700;
+            margin-bottom: 40px;
+        }
+        
+        .offer-box {
+            background: white;
+            color: #333;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        
+        .offer-title {
+            text-align: center;
+            background: linear-gradient(45deg, #8e44ad, #e91e63);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        .offer-subtitle {
+            text-align: center;
+            font-size: 1.5rem;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        .product-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-bottom: 30px;
+            background: linear-gradient(45deg, #f8f9fa, #e9ecef);
+            padding: 30px;
+            border-radius: 15px;
+        }
+        
+        .learning-section, .bonus-section {
+            padding: 20px;
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .learning-section .section-title {
+            color: #8e44ad;
+        }
+        
+        .bonus-section .section-title {
+            color: #e91e63;
+        }
+        
+        .benefit-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .benefit-icon {
+            font-size: 2rem;
+        }
+        
+        .price-section {
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .old-price {
+            font-size: 1.2rem;
+            text-decoration: line-through;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .new-price {
+            font-size: 4rem;
+            color: #27ae60;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .discount-badge {
+            background: linear-gradient(45deg, #e74c3c, #e91e63);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        
+        .special-offer-box {
+            background: #e3f2fd;
+            border-left: 5px solid #2196f3;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 10px;
+        }
+        
+        .special-title {
+            color: #1565c0;
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .special-text {
+            color: #1976d2;
+            margin-bottom: 10px;
+        }
+        
+        .special-highlight {
+            color: #0d47a1;
+            font-weight: bold;
+        }
+        
+        .urgency-box {
+            background: #ffebee;
+            border: 3px solid #e74c3c;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 15px;
+            text-align: center;
+        }
+        
+        .urgency-title {
+            color: #c62828;
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .urgency-text {
+            color: #d32f2f;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .urgency-final {
+            color: #b71c1c;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 40px;
+        }
+        
+        .btn-accept {
+            background: linear-gradient(45deg, #8e44ad, #e91e63);
+            color: white;
+            padding: 20px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+        }
+        
+        .btn-accept:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+        
+        .btn-reject {
+            background: #95a5a6;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-reject:hover {
+            background: #7f8c8d;
+        }
+        
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        .testimonial {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+        }
+        
+        .testimonial-text {
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+        
+        .testimonial-author {
+            color: #ffd700;
+            font-weight: bold;
+        }
+        
+        .guarantee {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .guarantee-badge {
+            background: #27ae60;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 25px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .offer-box {
+                padding: 20px;
+            }
+            
+            .new-price {
+                font-size: 3rem;
+            }
+            
+            .product-content {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Timer -->
+        <div class="timer">
+            <div class="timer-box" id="timer">
+                ⏰ OFERTA FINAL EXPIRA EM: <span id="countdown">08:00</span>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <h1>🎉 ÚLTIMA OFERTA ESPECIAL!</h1>
+        <p class="subtitle">Complete sua biblioteca de estudos bíblicos!</p>
+
+        <!-- Oferta Upsell 2 -->
+        <div class="offer-box">
+            <h2 class="offer-title">📖 MANUAL DE INTERPRETAÇÃO BÍBLICA</h2>
+            <p class="offer-subtitle">O complemento perfeito para seus estudos!</p>
+
+            <div class="product-content">
+                <div class="learning-section">
+                    <h3 class="section-title">📚 O que você vai aprender:</h3>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">🔍</span>
+                        <span>Técnicas avançadas de interpretação</span>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">📖</span>
+                        <span>Métodos de estudo bíblico sistemático</span>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">🧭</span>
+                        <span>Como contextualizar passagens difíceis</span>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">⚖️</span>
+                        <span>Princípios de hermenêutica bíblica</span>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">🎯</span>
+                        <span>Aplicação prática das escrituras</span>
+                    </div>
+                </div>
+
+                <div class="bonus-section">
+                    <h3 class="section-title">🎁 Bônus inclusos:</h3>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">📋</span>
+                        <span>Checklist de interpretação</span>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">📝</span>
+                        <span>Templates para estudos</span>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">🗂️</span>
+                        <span>Guia de referências cruzadas</span>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">💡</span>
+                        <span>Dicas de memorização</span>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">🔄</span>
+                        <span>Atualizações gratuitas</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Preço -->
+            <div class="price-section">
+                <div class="old-price">Valor normal: R$ 49,90</div>
+                <div class="new-price">R$ 16,90</div>
+                <div class="discount-badge">🔥 DESCONTO DE 66%!</div>
+            </div>
+
+            <!-- Por que esta oferta é especial -->
+            <div class="special-offer-box">
+                <h4 class="special-title">💎 Por que esta oferta é especial?</h4>
+                <p class="special-text">
+                    Você acabou de adquirir um material incrível sobre profecias bíblicas. 
+                    Agora você pode potencializar ainda mais seus estudos com técnicas profissionais de interpretação!
+                </p>
+                <p class="special-highlight">
+                    ✨ Juntos, estes materiais formarão sua biblioteca completa de estudos bíblicos!
+                </p>
+            </div>
+
+            <!-- Urgência -->
+            <div class="urgency-box">
+                <div class="urgency-title">⚡ ÚLTIMA CHANCE!</div>
+                <p class="urgency-text">
+                    Este é o preço mais baixo que oferecemos para este manual.
+                </p>
+                <p class="urgency-final">
+                    Após esta página, o valor será R$ 49,90!
+                </p>
+            </div>
+
+            <!-- Botões -->
+            <div class="buttons">
+                <a href="https://pay.kirvano.com/951b35ce-4a47-4571-a46c-2977281a6b00" 
+                   target="_blank" 
+                   class="btn-accept"
+                   onclick="setTimeout(() => window.location.href = 'thank-you.html', 2000);">
+                    🚀 SIM! QUERO O MANUAL POR R$ 16,90
+                </a>
+                
+                <a href="thank-you.html" class="btn-reject">
+                    Não, obrigado. Finalizar compras.
+                </a>
+            </div>
+        </div>
+
+        <!-- Depoimentos -->
+        <div class="testimonials">
+            <div class="testimonial">
+                <p class="testimonial-text">
+                    "O Manual de Interpretação transformou minha forma de estudar a Bíblia. 
+                    Agora entendo passagens que antes eram um mistério!"
+                </p>
+                <p class="testimonial-author">- João Santos</p>
+            </div>
+            
+            <div class="testimonial">
+                <p class="testimonial-text">
+                    "Excelente complemento! Uso junto com os estudos proféticos. 
+                    Recomendo para todos os estudantes da Bíblia."
+                </p>
+                <p class="testimonial-author">- Ana Costa</p>
+            </div>
+        </div>
+
+        <!-- Garantia -->
+        <div class="guarantee">
+            <div class="guarantee-badge">
+                <span>🛡️</span>
+                <span>Garantia incondicional de 7 dias</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Timer countdown
+        let timeLeft = 8 * 60; // 8 minutos em segundos
+        
+        function updateTimer() {
+            const minutes = Math.floor(timeLeft / 60);
+            const seconds = timeLeft % 60;
+            
+            const minutesStr = minutes.toString().padStart(2, '0');
+            const secondsStr = seconds.toString().padStart(2, '0');
+            
+            document.getElementById('countdown').textContent = `${minutesStr}:${secondsStr}`;
+            
+            if (timeLeft > 0) {
+                timeLeft--;
+            } else {
+                timeLeft = 8 * 60; // Reinicia para 8 minutos
+            }
+        }
+        
+        // Atualiza o timer a cada segundo
+        setInterval(updateTimer, 1000);
+        updateTimer(); // Chama imediatamente
+    </script>
+</body>
+</html>
