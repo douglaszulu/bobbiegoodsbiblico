@@ -206,25 +206,29 @@ export const PricingSection = () => {
             </div>
             
             <div className="flex flex-col gap-4">
-              <a 
-                href="https://pay.kirvano.com/bc50759f-a0d8-4dc3-a932-58defff07bf6" 
-                target="_blank" 
-                rel="noopener noreferrer"
+              <button 
                 className="w-full bg-green-600 hover:bg-green-700 text-white font-bold text-xl py-4 rounded-full text-center transition-all duration-300 hover:scale-105"
-                onClick={() => setShowUpgradePopup(false)}
+                onClick={() => {
+                  setShowUpgradePopup(false);
+                  setTimeout(() => {
+                    window.open("https://pay.kirvano.com/bc50759f-a0d8-4dc3-a932-58defff07bf6", "_blank");
+                  }, 100);
+                }}
               >
                 SIM! QUERO O PLANO COMPLETO - R$ 16,97
-              </a>
+              </button>
               
-              <a 
-                href="https://pay.kirvano.com/c05558fd-84bd-41e6-8589-c56afdf79d6a" 
-                target="_blank" 
-                rel="noopener noreferrer"
+              <button 
                 className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold text-lg py-3 rounded-full text-center transition-all duration-300"
-                onClick={() => setShowUpgradePopup(false)}
+                onClick={() => {
+                  setShowUpgradePopup(false);
+                  setTimeout(() => {
+                    window.open("https://pay.kirvano.com/c05558fd-84bd-41e6-8589-c56afdf79d6a", "_blank");
+                  }, 100);
+                }}
               >
                 Não, quero apenas o Plano Básico - R$ 9,97
-              </a>
+              </button>
             </div>
           </div>
         </DialogContent>
