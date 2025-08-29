@@ -97,6 +97,7 @@ export const PricingSection = () => {
         </p>
       </div>
 
+<<<<<<< HEAD
       {/* Planos de Preços */}
       <div className="max-w-6xl mx-auto mb-8 grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Plano Básico */}
@@ -107,6 +108,22 @@ export const PricingSection = () => {
             <div className="text-4xl font-extrabold text-blue-600 mb-4">R$ 9,97</div>
             <div className="text-lg font-bold bg-blue-100 text-blue-900 px-4 py-2 rounded-full inline-block mb-4">
               🎯 Ideal para começar
+=======
+      {/* Card Central */}
+      <div className="max-w-2xl mx-auto mb-8">
+        <div className="relative bg-white rounded-3xl shadow-glow border-4 border-yellow-300 p-8 md:p-12">
+          {/* Preço antigo */}
+          <div className="text-center text-lg opacity-60 line-through mb-2">De R$ 29,97 por apenas</div>
+          {/* Preço grande */}
+          <div className="text-center text-6xl md:text-7xl font-extrabold text-green-600 mb-4">R$ 19,97</div>
+          {/* Badge de desconto */}
+          <div className="flex flex-col items-center mb-4">
+            <div className="text-xl font-bold bg-yellow-400 text-black px-4 py-2 rounded-full inline-block mb-2 flex items-center gap-2">
+              💰 67% DE DESCONTO HOJE
+            </div>
+            <div className="text-lg opacity-90">
+              💝 Acesso Imediato + Todos os Bônus
+>>>>>>> eb95e6946bf6de872cf09494b7d8b5c09e9ee24b
             </div>
           </div>
           
@@ -169,6 +186,7 @@ export const PricingSection = () => {
         </div>
       </div>
 
+<<<<<<< HEAD
       {/* Popup de Upgrade */}
       <Dialog open={showUpgradePopup} onOpenChange={setShowUpgradePopup}>
         <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
@@ -229,6 +247,14 @@ export const PricingSection = () => {
           </div>
         </DialogContent>
       </Dialog>
+=======
+      {/* Botão destacado */}
+      <div className="max-w-2xl mx-auto mb-8">
+        <a href="https://pay.kirvano.com/76c8b58d-4afd-4820-87fc-61787e254334" target="_blank" rel="noopener noreferrer" className="cta-button w-full block text-center font-bold text-xl py-4 rounded-full shadow-xl transition-all duration-300 hover:scale-105" style={{ background: '#FF6B00', color: '#fff', animation: 'pulse 2s infinite' }}>
+          COMPRAR AGORA! - R$ 19,97 (DOWNLOAD IMEDIATO)
+        </a>
+      </div>
+>>>>>>> eb95e6946bf6de872cf09494b7d8b5c09e9ee24b
 
       {/* Barra de garantias */}
       <div className="max-w-2xl mx-auto flex flex-col md:flex-row items-center justify-center gap-4 mb-6">
