@@ -2,18 +2,28 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <title>🎉 ÚLTIMA OFERTA - Manual de Interpretação Bíblica por R$ 16,90</title>
     
     <!-- UTMify Pixel -->
     <script>
-      window.pixelId = "66e8573337b3410dbc935ebe";
-      var a = document.createElement("script");
-      a.setAttribute("async", "");
-      a.setAttribute("defer", "");
-      a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-      document.head.appendChild(a);
+      (function() {
+        window.pixelId = "66e8573337b3410dbc935ebe";
+        var a = document.createElement("script");
+        a.setAttribute("async", "");
+        a.setAttribute("defer", "");
+        a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+        document.head.appendChild(a);
+      })();
     </script>
+    
+    <!-- Kirvano Upsell Config - Upsell 2 -->
+    <script>
+        var offer = "951b35ce-4a47-4571-a46c-2977281a6b00";
+        var nextPageURL = null;
+        var refusePageURL = null;
+    </script>
+    <script src="https://snippets.kirvano.com/upsell.min.js"></script>
     
     <style>
         * {
@@ -23,166 +33,196 @@
         }
         
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Arial', 'Segoe UI', sans-serif;
             background: linear-gradient(135deg, #8e44ad 0%, #9b59b6 50%, #e91e63 100%);
             color: white;
             line-height: 1.6;
+            min-height: 100vh;
         }
         
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 20px 16px 40px;
         }
         
         .timer {
             text-align: center;
             margin-bottom: 30px;
+            position: sticky;
+            top: 10px;
+            z-index: 100;
         }
         
         .timer-box {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
             background: linear-gradient(45deg, #e74c3c, #e91e63);
             color: white;
-            padding: 15px 30px;
-            border-radius: 50px;
-            font-size: 24px;
+            padding: 12px 28px;
+            border-radius: 60px;
+            font-size: 1.2rem;
             font-weight: bold;
+            font-family: monospace;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+        
+        .timer-box span {
+            font-size: 1.6rem;
+            background: #1e1e2a;
+            padding: 4px 12px;
+            border-radius: 40px;
+            margin-left: 8px;
         }
         
         h1 {
             text-align: center;
-            font-size: 3.5rem;
+            font-size: 2.8rem;
             margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            text-shadow: 3px 3px 0 #5e2a7a;
         }
         
         .subtitle {
             text-align: center;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             color: #ffd700;
             margin-bottom: 40px;
+            font-weight: 600;
         }
         
         .offer-box {
             background: white;
             color: #333;
-            border-radius: 20px;
-            padding: 40px;
+            border-radius: 36px;
+            padding: 32px 28px;
             margin-bottom: 30px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            box-shadow: 0 25px 45px rgba(0,0,0,0.3);
         }
         
         .offer-title {
             text-align: center;
             background: linear-gradient(45deg, #8e44ad, #e91e63);
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
             background-clip: text;
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            font-weight: bold;
+            color: transparent;
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+            font-weight: 800;
         }
         
         .offer-subtitle {
             text-align: center;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             color: #666;
             margin-bottom: 30px;
         }
         
         .product-content {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 35px;
             margin-bottom: 30px;
-            background: linear-gradient(45deg, #f8f9fa, #e9ecef);
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
             padding: 30px;
-            border-radius: 15px;
+            border-radius: 28px;
         }
         
         .learning-section, .bonus-section {
-            padding: 20px;
+            padding: 10px;
         }
         
         .section-title {
             font-size: 1.5rem;
             font-weight: bold;
             margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid;
         }
         
         .learning-section .section-title {
             color: #8e44ad;
+            border-bottom-color: #8e44ad;
         }
         
         .bonus-section .section-title {
             color: #e91e63;
+            border-bottom-color: #e91e63;
         }
         
         .benefit-item {
             display: flex;
             align-items: center;
             gap: 15px;
-            margin-bottom: 15px;
+            margin-bottom: 16px;
+            font-size: 1rem;
+            color: #2c3e44;
         }
         
         .benefit-icon {
-            font-size: 2rem;
+            font-size: 1.8rem;
+            min-width: 40px;
         }
         
         .price-section {
             text-align: center;
             margin: 30px 0;
+            background: #fef5e7;
+            padding: 20px;
+            border-radius: 48px;
         }
         
         .old-price {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             text-decoration: line-through;
-            color: #666;
-            margin-bottom: 10px;
+            color: #7f8c8d;
+            margin-bottom: 8px;
         }
         
         .new-price {
             font-size: 4rem;
             color: #27ae60;
-            font-weight: bold;
-            margin-bottom: 15px;
+            font-weight: 900;
+            margin-bottom: 10px;
+            letter-spacing: -2px;
         }
         
         .discount-badge {
             background: linear-gradient(45deg, #e74c3c, #e91e63);
             color: white;
-            padding: 12px 25px;
-            border-radius: 25px;
+            padding: 10px 22px;
+            border-radius: 50px;
             font-weight: bold;
             display: inline-block;
-            margin-bottom: 20px;
             font-size: 1.1rem;
         }
         
         .special-offer-box {
             background: #e3f2fd;
-            border-left: 5px solid #2196f3;
-            padding: 25px;
+            border-left: 6px solid #2196f3;
+            padding: 22px 25px;
             margin: 30px 0;
-            border-radius: 10px;
+            border-radius: 20px;
         }
         
         .special-title {
             color: #1565c0;
             font-size: 1.3rem;
             font-weight: bold;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
         }
         
         .special-text {
             color: #1976d2;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
+            line-height: 1.4;
         }
         
         .special-highlight {
             color: #0d47a1;
             font-weight: bold;
+            font-size: 1.05rem;
         }
         
         .urgency-box {
@@ -190,91 +230,104 @@
             border: 3px solid #e74c3c;
             padding: 25px;
             margin: 30px 0;
-            border-radius: 15px;
+            border-radius: 20px;
             text-align: center;
         }
         
         .urgency-title {
             color: #c62828;
-            font-size: 2rem;
-            font-weight: bold;
-            margin-bottom: 15px;
+            font-size: 1.6rem;
+            font-weight: 800;
+            margin-bottom: 12px;
         }
         
         .urgency-text {
             color: #d32f2f;
-            font-size: 1.2rem;
-            margin-bottom: 10px;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
         }
         
         .urgency-final {
             color: #b71c1c;
             font-weight: bold;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
         }
         
         .buttons {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 18px;
             margin-top: 40px;
         }
         
         .btn-accept {
-            background: linear-gradient(45deg, #8e44ad, #e91e63);
+            background: linear-gradient(95deg, #8e44ad, #e91e63);
             color: white;
-            padding: 20px 40px;
+            padding: 18px 28px;
             border: none;
-            border-radius: 50px;
-            font-size: 1.5rem;
+            border-radius: 60px;
+            font-size: 1.3rem;
             font-weight: bold;
             cursor: pointer;
-            text-decoration: none;
             text-align: center;
-            transition: all 0.3s ease;
+            transition: all 0.25s ease;
             text-transform: uppercase;
+            font-family: inherit;
+            width: 100%;
+            box-shadow: 0 6px 0 #6b2e8a;
         }
         
         .btn-accept:hover {
-            transform: scale(1.05);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+            filter: brightness(1.05);
+        }
+        
+        .btn-accept:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
         }
         
         .btn-reject {
             background: #95a5a6;
             color: white;
-            padding: 15px 30px;
+            padding: 14px 24px;
             border: none;
-            border-radius: 25px;
-            font-size: 1.1rem;
+            border-radius: 50px;
+            font-size: 1.05rem;
             cursor: pointer;
-            text-decoration: none;
             text-align: center;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
+            font-family: inherit;
+            font-weight: 600;
+            width: 100%;
         }
         
         .btn-reject:hover {
             background: #7f8c8d;
+            transform: scale(0.98);
         }
         
         .testimonials {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 20px;
             margin: 40px 0;
         }
         
         .testimonial {
-            background: rgba(255,255,255,0.1);
+            background: rgba(255,255,255,0.12);
             backdrop-filter: blur(10px);
-            border-radius: 15px;
+            border-radius: 20px;
             padding: 20px;
+            border: 1px solid rgba(255,255,255,0.2);
         }
         
         .testimonial-text {
             font-size: 0.95rem;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
             font-style: italic;
+            line-height: 1.4;
         }
         
         .testimonial-author {
@@ -284,36 +337,45 @@
         
         .guarantee {
             text-align: center;
-            margin-top: 30px;
+            margin-top: 25px;
         }
         
         .guarantee-badge {
             background: #27ae60;
             color: white;
-            padding: 15px 30px;
-            border-radius: 25px;
+            padding: 12px 24px;
+            border-radius: 50px;
             display: inline-flex;
             align-items: center;
             gap: 10px;
             font-weight: bold;
+            font-size: 0.95rem;
         }
         
-        @media (max-width: 768px) {
+        @media (max-width: 640px) {
             h1 {
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
             
             .offer-box {
-                padding: 20px;
+                padding: 20px 18px;
             }
             
             .new-price {
                 font-size: 3rem;
             }
             
+            .offer-title {
+                font-size: 1.6rem;
+            }
+            
+            .btn-accept {
+                font-size: 1rem;
+                padding: 16px 12px;
+            }
+            
             .product-content {
-                grid-template-columns: 1fr;
-                gap: 20px;
+                padding: 20px;
             }
         }
     </style>
@@ -322,7 +384,7 @@
     <div class="container">
         <!-- Timer -->
         <div class="timer">
-            <div class="timer-box" id="timer">
+            <div class="timer-box">
                 ⏰ OFERTA FINAL EXPIRA EM: <span id="countdown">08:00</span>
             </div>
         </div>
@@ -416,18 +478,17 @@
                 </p>
             </div>
 
-            <!-- Botões -->
+            <!-- Botões com integração Kirvano Upsell -->
             <div class="buttons">
-                <a href="https://pay.kirvano.com/951b35ce-4a47-4571-a46c-2977281a6b00" 
-                   target="_blank" 
-                   class="btn-accept"
-                   onclick="setTimeout(() => window.location.href = 'thank-you.html', 2000);">
+                <!-- Botão Aceitar - classe kirvano-payment-trigger -->
+                <button class="btn-accept kirvano-payment-trigger">
                     🚀 SIM! QUERO O MANUAL POR R$ 16,90
-                </a>
+                </button>
                 
-                <a href="thank-you.html" class="btn-reject">
-                    Não, obrigado. Finalizar compras.
-                </a>
+                <!-- Botão Recusar - classe kirvano-refuse-trigger -->
+                <button class="btn-reject kirvano-refuse-trigger">
+                    ❌ Não, obrigado. Finalizar compras.
+                </button>
             </div>
         </div>
 
@@ -460,8 +521,8 @@
     </div>
 
     <script>
-        // Timer countdown
-        let timeLeft = 8 * 60; // 8 minutos em segundos
+        // Timer countdown (8 minutos)
+        let timeLeft = 8 * 60;
         
         function updateTimer() {
             const minutes = Math.floor(timeLeft / 60);
@@ -470,18 +531,26 @@
             const minutesStr = minutes.toString().padStart(2, '0');
             const secondsStr = seconds.toString().padStart(2, '0');
             
-            document.getElementById('countdown').textContent = `${minutesStr}:${secondsStr}`;
+            const timerElement = document.getElementById('countdown');
+            if (timerElement) {
+                timerElement.textContent = `${minutesStr}:${secondsStr}`;
+            }
             
             if (timeLeft > 0) {
                 timeLeft--;
             } else {
-                timeLeft = 8 * 60; // Reinicia para 8 minutos
+                timeLeft = 8 * 60;
             }
         }
         
-        // Atualiza o timer a cada segundo
+        // Inicia o timer
         setInterval(updateTimer, 1000);
-        updateTimer(); // Chama imediatamente
+        updateTimer();
+
+        // Verificar se o script Kirvano carregou
+        window.addEventListener('load', function() {
+            console.log('✅ Página de Upsell 2 carregada com Kirvano');
+        });
     </script>
 </body>
 </html>
